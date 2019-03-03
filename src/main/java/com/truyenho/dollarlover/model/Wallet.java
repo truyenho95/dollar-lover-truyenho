@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "wallet")
-public class WalletModel {
+public class Wallet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,10 +13,10 @@ public class WalletModel {
     private String name;
     private double openingBalance;
 
-    public WalletModel() {
+    public Wallet() {
     }
 
-    public WalletModel(String name, double openingBalance) {
+    public Wallet(String name, double openingBalance) {
         this.name = name;
         this.openingBalance = openingBalance;
     }
