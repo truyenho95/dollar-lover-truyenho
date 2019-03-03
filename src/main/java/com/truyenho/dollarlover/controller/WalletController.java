@@ -9,7 +9,7 @@ public class WalletController {
 
     @GetMapping("/")
     public ModelAndView index() {
-        return new ModelAndView("/index");
+        return new ModelAndView("index");
     }
 
 }
